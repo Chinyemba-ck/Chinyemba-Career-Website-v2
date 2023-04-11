@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.qtile
     pkgs.python39Packages.pip
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
