@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Submitted</title>
+        {%  include 'bootstrap.html'       %}
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-2 mb-4">Chinyemba Careers</h1>
+            
+            <p>Your Application for the role of<b>{{job['title']}} at Chinyemba Has been submitted</title></b> been submitted</p>
+            {%  include 'nav.html'       %}
+            {%  include 'banner.html'       %}
+            <b>Full Name</b>
+            <div>{{application['full_name']}}</div>
+            
+            <b>Email</b>
+            <div class="mt-2">{{application['email']}}</div>
+
+            <b>LinkedIn Url</b>
+            <div>{{application['linkedin_url']}}</div>
+            
+            <b>work Experience</b>
+            <div class="mt-2">{{application['work_experience']}}</div>
+            
+            <b>Education</b>
+            <div class="mt-2">{{application['education']}}</div>
+            
+            <b>Resume</b>
+            <div class="mt-2">{{application['resuem_url']}}</div>
+
+            {%  include 'footer.html'       %}
+        </div>
+    </body>
+</html>
